@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar'
-
 function App() {
   const [count , setCount] = useState(0)
-  return (
+  return (<div className='bg-black'>
     <Navbar />
+    </div>
   )
 }
 
