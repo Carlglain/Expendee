@@ -7,4 +7,12 @@
          @apply hover:scale-150 
  
      }
+     h2 {
+        @apply font-bold mt-2
+     }
+ }
+ @layer component{
+    .btn1-styles{
+        @apply border border-black px-1 text-lg w-80 rounded-md my-2;
+    }
  }
