@@ -15,7 +15,7 @@ function Navbar() {
             < li className='mx-4 navurl'><Link>Intergrations <ArrowDropDownIcon /></Link></li>
             < li className='mx-4 navurl'><Link>Pricing</Link></li>
             < li className='mx-4 navurl'><Link>Help Center</Link></li>
-            < li className='mx-4 navurl text-lg rounded-md bg-gradient-to-r px-3 form-orange-700 to-blue-500'><Link>Login</Link></li>
+            < li className='mx-4 navurl text-lg rounded-md bg-gradient-to-r px-3 form-orange-700 to-blue-500'><Link to="/registration">Login</Link></li>
             < li className='mx-4 text-lg text-white px-4 navurl bg-black rounded-md  '><Link>Start Free Trial</Link></li>
           </ul>
       </div>
@@ -36,7 +36,7 @@ function Navbar() {
                   < li className='mx-4 navurl'><Link>Help Center</Link></li>
                 </ul>
                 <ul className='hidden lg:flex items-center'>
-                < li className='mx-4 navurl text-lg rounded-md bg-gradient-to-r px-3 form-orange-700 to-blue-500'><Link>Login</Link></li>
+                < li className='mx-4 navurl text-lg rounded-md bg-gradient-to-r px-3 form-orange-700 to-blue-500'><Link to="/registration">Login</Link></li>
                 < li className='mx-4 text-lg text-white px-4 navurl bg-black rounded-md  '><Link>Start Free Trial</Link></li>
                 </ul>
                 <div className='lg:hidden md:flex justify-end flex-col text-black'>
