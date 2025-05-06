@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../../../Components/Navbar'
 import Sarah from '../../../assets/sarah.jpeg'
-import { Link } from 'react-router-dom'
+import {NavLink, Link } from 'react-router-dom'
 function Login() {
+    const [regSelected, setRegSelected] = useCase(false)
   return (
     <div>
    
@@ -37,7 +38,7 @@ function Login() {
 
 
         </div>
-        <div className='lg:w-1/2 lg:ml-20 mx-auto text-center'>
+        <div className='lg:w-1/2 lg:ml-15 mr-4 text-center'>
             <button onClick = {()=>{
 
             }}>Login</button> 
@@ -53,6 +54,7 @@ function Login() {
                 <span className="px-4 text-gray-500">or</span>
                 <div className="border-t border-gray-300 w-1/2"></div>
             </div>
+
         </div>
     </div>
     </div>
