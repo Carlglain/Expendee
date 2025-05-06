@@ -54,7 +54,18 @@ function Login() {
                 <span className="px-4 text-gray-500">or</span>
                 <div className="border-t border-gray-300 w-1/2"></div>
             </div>
+           {/* Login */}
+            <div>
+            <label htmlFor="l1">Email address</label> <br />
+            <input id='l1' type="email" />
+            <label htmlFor="l2">Password</label>  <Link>forgot password?</Link><br />
+            <input id='l2' type="password" />
+            <div className='btn1-styles'><input id='l3' type="checkbox" /> <label htmlFor='l3'> Remember me for 30 days</label></div>
+            </div>
+            {/* registration */}
+            <div>
 
+            </div>
         </div>
     </div>
     </div>
