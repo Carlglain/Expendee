@@ -38,7 +38,7 @@ function Login() {
 
 
         </div>
-        <div className='lg:w-1/2 lg:ml-30 mr-4'>
+        <div className='lg:w-1/2 lg:ml-30 lg:mr-4 text-center block'>
         <div className='text-center'>{regSelected?"Create Your Account today with us":"Welcome Back" }</div>
             <button onClick = {()=>{
 
@@ -50,9 +50,9 @@ function Login() {
            {/* Login */}
             <div className='text-left '>
             <label htmlFor="l1">Email address</label> <br />
-            <input className='border rounded-md w-full mb-4 p-2 lg:w-md' id='l1' type="email" /> <br />
+            <input className='border rounded-md w-screen mb-4 p-2 lg:w-md' id='l1' type="email" /> <br />
             <label htmlFor="l2">Password</label>  <Link>forgot password?</Link><br />
-            <input className='border rounded-md w-full mb-4 p-2 lg:w-md' id='l2' type="password" /> <br />
+            <input className='border rounded-md w-screen mb-4 p-2 lg:w-md' id='l2' type="password" /> <br />
             <input id='l3' type="checkbox" /> <label htmlFor='l3'> Remember me for 30 days</label>
             </div>
             {/* registration */}
@@ -60,13 +60,13 @@ function Login() {
 
             </div>
             <button className='btn1-styles '>{regSelected?"Sign Up":"Sign In"}</button>
-            <div className="flex items-center justify-center w-md my-6">
+            <div className="flex items-center justify-center w-screen lg:w-md my-6">
                 <div className="border-t border-gray-300 w-1/2"></div>
                 <span className="px-2 text-gray-500">or continue with</span>
                 <div className="border-t border-gray-300 w-1/2"></div>
             </div>
-            <button className='border border-black px-1 text-lg w-50 rounded-md my-4 text-center p-2 mr-10 '>Google</button>
-            <button className='border border-black px-1 text-lg w-50 rounded-md my-1 text-center p-2'>Apple</button>
+            <button className='border border-black px-1 text-lg w-25 lg:w-50 rounded-md my-4 text-center p-2 mr-10 '>Google</button>
+            <button className='border border-black px-1 text-lg w-25 lg:w-50 rounded-md my-1 text-center p-2'>Apple</button>
         </div>
     </div>
     </div>
