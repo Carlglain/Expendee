@@ -7,7 +7,7 @@ function Login() {
   return (
     <div>
    
-    <div className='flex h-screen justify-center items-center space-x-4 text-black bg-black-600'>
+    <div className='flex h-screen justify-center lg:items-center space-x-4 text-black bg-black-600'>
         <div className='hidden lg:block bg-black px-20 py-1 w-1/2 h-full text-lg text-white'>
         <h1 className='font-bold text-[2.5rem] my-6'>Track Your Expenses Smarter</h1>
         <>Connect multiple mobile money platforms, analyze spending patterns, and get personalized insights to make better financial decisions.
@@ -38,21 +38,24 @@ function Login() {
 
 
         </div>
-        <div className='lg:w-1/2 lg:ml-30 lg:mr-4 text-center block'>
-        <div className='text-center'>{regSelected?"Create Your Account today with us":"Welcome Back" }</div>
-            <button onClick = {()=>{
-
+        <div className='lg:w-1/2 lg:ml-30 lg:mr-4 text-center'>
+        <div className='text-center my-6'>{regSelected?"Create Your Account today with us":"Welcome Back" }</div>
+            <div className='text-left ml-6 '>
+            <button className='mr-4' onClick = {()=>{setRegSelected =>(regSelected =false)
+            //console.log("clicked")
             }}>Login</button> 
-            <button onClick={()=>{
+            <button onClick={()=>{setRegSelected =>(regSelected =true)
+            //console.log("clicked")
 
             }}>SignUp</button>
-            <br />
+            </div>
+            
            {/* Login */}
-            <div className='text-left '>
+            <div className='text-left p-6 '>
             <label htmlFor="l1">Email address</label> <br />
-            <input className='border rounded-md w-screen mb-4 p-2 lg:w-md' id='l1' type="email" /> <br />
+            <input className='border  rounded-md w-80 mb-4 p-2 lg:w-md' id='l1' type="email" /> <br />
             <label htmlFor="l2">Password</label>  <Link>forgot password?</Link><br />
-            <input className='border rounded-md w-screen mb-4 p-2 lg:w-md' id='l2' type="password" /> <br />
+            <input className='border rounded-md w-80 mb-4 p-2 lg:w-md' id='l2' type="password" /> <br />
             <input id='l3' type="checkbox" /> <label htmlFor='l3'> Remember me for 30 days</label>
             </div>
             {/* registration */}
@@ -65,8 +68,8 @@ function Login() {
                 <span className="px-2 text-gray-500">or continue with</span>
                 <div className="border-t border-gray-300 w-1/2"></div>
             </div>
-            <button className='border border-black px-1 text-lg w-25 lg:w-50 rounded-md my-4 text-center p-2 mr-10 '>Google</button>
-            <button className='border border-black px-1 text-lg w-25 lg:w-50 rounded-md my-1 text-center p-2'>Apple</button>
+            <button className='border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-4 text-center p-2 mr-10 '>Google</button>
+            <button className='border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-1 text-center p-2'>Apple</button>
         </div>
     </div>
     </div>
