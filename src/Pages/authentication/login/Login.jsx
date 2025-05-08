@@ -52,21 +52,28 @@ function Login() {
             <div className='text-left ml-6 mb-1 lg:ml-6'>
                 <button className='mr-6'  onClick = {()=>{setRegSelected(false)
                 }}>Login</button> 
-                {!renderSignUp && <div className="absolute left-3 top-40 w-15 lg:top-76 lg:h-0.9 lg:left-257 h-0.5 lg:left-257 lg:top-73  bg-red-700"></div>}
+                {!renderSignUp && <div className="absolute left-3 top-40 w-15 lg:top-60 lg:h-0.9 lg:left-257 h-0.5 lg:left-257 lg:top-76  bg-red-700"></div>}
             
                 <button  onClick={()=>{setRegSelected(true)}}>SignUp</button>
-                {renderSignUp && <div className="absolute left-21 top-40 w-15 h-0.5 lg:left-275 lg:h-0.9 lg:top-76  bg-red-700"></div>}
+                {renderSignUp && <div className="absolute left-21 top-40 w-15 h-0.5 lg:left-275 lg:h-0.9 lg:top-48  bg-red-700"></div>}
             </div>
             <hr className='w-80 color-gray-50 ml-3 lg:ml-6'/>
         
             
            {/* Login */}
-            <div className='text-left p-6 '>
+            <div className='text-left  p-6 '>
+            {renderSignUp && <><label htmlFor="l0">Full Name</label> <br />
+            <input className='border  rounded-md w-80 mb-4 p-2 lg:w-md' id='l0' type="text" /> <br /> </>}
             <label htmlFor="l1">Email address</label> <br />
             <input className='border  rounded-md w-80 mb-4 p-2 lg:w-md' id='l1' type="email" /> <br />
-            <label htmlFor="l2">Password</label>  <Link>forgot password?</Link><br />
+            {renderSignUp && <><label htmlFor="l">Phone</label> <br />
+                <input className='border  rounded-md w-80 mb-4 p-2 lg:w-md' id='l' type="number" /> <br /> </>}
+            <label htmlFor="l2" className='lg:mr-65'>Password</label>  <Link>forgot password?</Link><br />
             <input className='border rounded-md w-80 mb-4 p-2 lg:w-md' id='l2' type="password" /> <br />
-            <input id='l3' type="checkbox" /> <label htmlFor='l3'> Remember me for 30 days</label>
+            {renderSignUp && <><label htmlFor="l3">Confirm Password</label> <br />
+                <input className='border  rounded-md w-80 mb-4 p-2 lg:w-md' id='l3' type="password" /> <br /> </>}
+           {!renderSignUp && <> <input id='l3' type="checkbox" /> <label htmlFor='l3'> Remember me for 30 days</label> </>}
+            
             </div>
             {/* registration */}
             <div>
