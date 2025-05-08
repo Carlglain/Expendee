@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../../../Components/Navbar'
 import Sarah from '../../../assets/sarah.jpeg'
 import {NavLink, Link } from 'react-router-dom'
+import GoogleIcon from '@mui/icons-material/Google';
+import AppleIcon from '@mui/icons-material/Apple';
 function Login() {
     const [regSelected, setRegSelected] = useState(false);
     const [renderSignUp, setRenderSignUp] = useState(false)
@@ -79,14 +81,14 @@ function Login() {
             <div>
 
             </div>
-            <button className='btn1-styles lg:w-md lg: '>{renderSignUp?"Sign Up":"Sign In"}</button>
+            <button className='btn1-styles lg:w-md'>{renderSignUp?"Sign Up":"Sign In"}</button>
             <div className="flex items-center justify-center w-screen lg:w-md my-6 lg:ml-6">
                 <div className="border-t border-gray-300 w-1/2"></div>
                 <span className="px-2 text-gray-500">or continue with</span>
                 <div className="border-t border-gray-300 w-1/2"></div>
             </div>
-            <button className='lg:ml-6 border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-4 text-center p-2 mr-10  '>Google</button>
-            <button className='border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-1 text-center p-2'>Apple</button>
+            <button className='lg:ml-6 border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-4 text-center p-2 mr-10  '><GoogleIcon /> Google</button>
+            <button className='border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-1 text-center p-2'><AppleIcon /> Apple</button>
         </div>
     </div>
     </div>
