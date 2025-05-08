@@ -1,9 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../../../Components/Navbar'
 import Sarah from '../../../assets/sarah.jpeg'
 import {NavLink, Link } from 'react-router-dom'
 function Login() {
-    const [regSelected, setRegSelected] = useState(false)
+    const [regSelected, setRegSelected] = useState(false);
+    const [renderSignUp, setRenderSignUp] = useState(false)
+    useEffect(()=>{
+        if(regSelected){
+            setRenderSignUp(true)
+        }
+        else{
+            setRenderSignUp(false)
+        }
+    },[regSelected])
   return (
     <div>
    
@@ -38,17 +47,18 @@ function Login() {
 
 
         </div>
-        <div className='lg:w-1/2 lg:ml-30 lg:mr-4 text-center'>
-        <div className='text-center my-6'>{regSelected?"Create Your Account today with us":"Welcome Back" }</div>
-            <div className='text-left ml-6 '>
-            <button className='mr-4' onClick = {()=>{setRegSelected =>(regSelected =false)
-            //console.log("clicked")
-            }}>Login</button> 
-            <button onClick={()=>{setRegSelected =>(regSelected =true)
-            //console.log("clicked")
-
-            }}>SignUp</button>
+        <div className='lg:w-1/2 lg:ml-30 lg:text-[1rem] lg:mr-4 text-center lg:text-left'>
+        <div className='text-center lg:text-[2rem] font-bold  lg:text-left lg:ml-6 my-6'>{renderSignUp?"Create Your Account today with us":"Welcome Back" }</div>
+            <div className='text-left ml-6 mb-1 lg:ml-6'>
+                <button className='mr-6'  onClick = {()=>{setRegSelected(false)
+                }}>Login</button> 
+                {!renderSignUp && <div className="absolute left-3 top-40 w-15 lg:top-76 lg:h-0.9 lg:left-257 h-0.5 lg:left-257 lg:top-73  bg-red-700"></div>}
+            
+                <button  onClick={()=>{setRegSelected(true)}}>SignUp</button>
+                {renderSignUp && <div className="absolute left-21 top-40 w-15 h-0.5 lg:left-275 lg:h-0.9 lg:top-76  bg-red-700"></div>}
             </div>
+            <hr className='w-80 color-gray-50 ml-3 lg:ml-6'/>
+        
             
            {/* Login */}
             <div className='text-left p-6 '>
@@ -62,13 +72,13 @@ function Login() {
             <div>
 
             </div>
-            <button className='btn1-styles '>{regSelected?"Sign Up":"Sign In"}</button>
-            <div className="flex items-center justify-center w-screen lg:w-md my-6">
+            <button className='btn1-styles lg:w-md lg: '>{renderSignUp?"Sign Up":"Sign In"}</button>
+            <div className="flex items-center justify-center w-screen lg:w-md my-6 lg:ml-6">
                 <div className="border-t border-gray-300 w-1/2"></div>
                 <span className="px-2 text-gray-500">or continue with</span>
                 <div className="border-t border-gray-300 w-1/2"></div>
             </div>
-            <button className='border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-4 text-center p-2 mr-10 '>Google</button>
+            <button className='lg:ml-6 border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-4 text-center p-2 mr-10  '>Google</button>
             <button className='border border-black px-1 text-lg w-35 lg:w-50 rounded-md my-1 text-center p-2'>Apple</button>
         </div>
     </div>
