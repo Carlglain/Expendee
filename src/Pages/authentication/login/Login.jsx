@@ -77,11 +77,7 @@ function Login() {
            {!renderSignUp && <> <input id='l3' type="checkbox" /> <label htmlFor='l3'> Remember me for 30 days</label> </>}
             
             </div>
-            {/* registration */}
-            <div>
-
-            </div>
-            <button className='btn1-styles lg:w-md'>{renderSignUp?"Sign Up":"Sign In"}</button>
+            <button className='border  rounded-md w-80 mr-2 lg:ml-6  p-2 lg:w-md'>{renderSignUp?"Sign Up":"Sign In"}</button>
             <div className="flex items-center justify-center w-screen lg:w-md my-6 lg:ml-6">
                 <div className="border-t border-gray-300 w-1/2"></div>
                 <span className="px-2 text-gray-500">or continue with</span>

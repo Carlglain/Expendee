@@ -13,6 +13,6 @@
  }
  @layer component{
     .btn1-styles{
-        @apply border border-black text-lg lg:w-md w-80 rounded-md my-2 text-center p-2 lg:ml-6 ml-0;
+        @apply border border-black text-lg lg:w-md w-80 rounded-md my-2 text-center p-2 lg:ml-6 ;
     }
  }
