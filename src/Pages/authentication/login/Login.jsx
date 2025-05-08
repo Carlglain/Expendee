@@ -70,7 +70,7 @@ function Login() {
             <input className='border  rounded-md w-80 mb-4 p-2 lg:w-md' id='l1' type="email" /> <br />
             {renderSignUp && <><label htmlFor="l">Phone</label> <br />
                 <input className='border  rounded-md w-80 mb-4 p-2 lg:w-md' id='l' type="number" /> <br /> </>}
-            <label htmlFor="l2" className='lg:mr-65'>Password</label>  <Link>forgot password?</Link><br />
+            <label htmlFor="l2" className='lg:mr-63 mr-30'>Password</label>  <Link>forgot password?</Link><br />
             <input className='border rounded-md w-80 mb-4 p-2 lg:w-md' id='l2' type="password" /> <br />
             {renderSignUp && <><label htmlFor="l3">Confirm Password</label> <br />
                 <input className='border  rounded-md w-80 mb-4 p-2 lg:w-md' id='l3' type="password" /> <br /> </>}
