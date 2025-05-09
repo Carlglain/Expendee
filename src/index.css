@@ -4,7 +4,7 @@
 
 @layer base{
     ul li{
-         @apply hover:scale-150 
+         @apply hover:scale-120 
  
      }
      h2 {

@@ -54,10 +54,10 @@ function Login() {
             <div className='text-left ml-6 mb-1 lg:ml-6'>
                 <button className='mr-6'  onClick = {()=>{setRegSelected(false)
                 }}>Login</button> 
-                {!renderSignUp && <div className="absolute left-3 top-40 w-15 lg:top-78 lg:h-0.9 lg:left-259 h-0.5 lg:left-257 lg:top-76  bg-red-700"></div>}
+                {!renderSignUp && <div className="absolute left-3 top-45 w-15 lg:top-78 lg:h-0.9 lg:left-259 h-0.5 lg:left-257 lg:top-83  bg-red-700"></div>}
             
                 <button  onClick={()=>{setRegSelected(true)}}>SignUp</button>
-                {renderSignUp && <div className="absolute left-21 top-40 w-15 h-0.5 lg:left-275 lg:h-0.9 lg:top-50  bg-red-700"></div>}
+                {renderSignUp && <div className="absolute left-21 top-45 w-15 h-0.5 lg:left-275 lg:h-0.9 lg:top-55  bg-red-700"></div>}
             </div>
             <hr className='w-80 color-gray-50 ml-3 lg:ml-6'/>
         
