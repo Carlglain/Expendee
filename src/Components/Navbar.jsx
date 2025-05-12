@@ -28,10 +28,12 @@ function Navbar() {
     <nav className='top-0 sticky text-black w-full h-20 py-4 bg-gray-50 text-lg lg:text-[2rem] border-b-2 border-gray-100 '>
         <div className='px-4 mx-auto relative'>
             <div className='flex items-center justify-between'>
+                <Link to='/'>
                 <div className='flex items-center space-x-1'>
                     <img src={Logo} alt="Expendee logo" className='h-8 w-9' />
                     <span className='text-[1.5rem] font-semibold font-poppins'>Expendee</span>
                 </div>
+                </Link>
                 <ul className='hidden lg:flex items-center '>
                   < li className='mx-4 navurl'><Link>Features <ArrowDropDownIcon /></Link></li>
                   < li className='mx-4 navurl'><Link>Intergrations <ArrowDropDownIcon /></Link></li>
