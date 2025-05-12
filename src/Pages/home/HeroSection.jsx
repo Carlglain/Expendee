@@ -5,10 +5,10 @@ import SyncLockIcon from '@mui/icons-material/SyncLock';
 import { Link } from 'react-router-dom';
 function HeroSection() {
   return (
-    <div className='flex text-xl space-x-4'>
-        <div className=' w-1/2'>
+    <div className='flex flex-col lg:flex-row text-xl space-x-4 space-y-10 '>
+        <div className=' lg:w-1/2 w-screen '>
         
-            <h1 className='font-bold text-[2rem] lg:text-[4rem] mb-6'>Smart Expense Tracking Across All Your Mobile Money Platforms</h1>
+            <h1 className='font-bold text-[2rem] lg:text-[4rem] mb-6 text-center lg:text-left '>Smart Expense Tracking Across All Your Mobile Money Platforms</h1>
             <p className='lg:hidden'><WhereToVoteIcon />Gain complete visibility into your spending habits with our AI-powered analytics.
             <br /><WhereToVoteIcon /> Connect all your accounts,
             <br /><WhereToVoteIcon />automate categorization, 
@@ -17,16 +17,22 @@ function HeroSection() {
         
             <p className='hidden lg:block text-xl'>Gain complete visibility into your spending habits with our AI-powered analytics. Connect all your accounts,automate categorization, and make
             smarter financial decisions.</p>
-        <div className='my-10 flex flex-col items-center lg:block '>
+            <div className='my-10 flex flex-col items-center lg:block '>
             <span className='border rounded-md p-4 text-center my-2 mr-6 text-white bg-gray-900'> <Link to='/registration'>Get Started for free</Link> </span>
             <Link> <PlayCircleFilledIcon /> See how it works</Link>
+            </div>
+            <p><SyncLockIcon /> Bank-level security with 256-bit encryption </p>
         </div>
-        <p><SyncLockIcon /> Bank-level security with 256-bit encryption </p>
+        <div className="lg:w-1/2 lg:flex lg:items-center block">
+            <div className="bg-white p-8 rounded-md shadow-md"> 
+                <Link
+                className="bg-gray-900 text-white p-4 rounded-md hover:bg-gray-700 transition duration-300 block"  
+                >
+                Dashboard visualization showing expense analytics and transaction data
+                </Link>
+            </div>
+        </div>
     </div>
-    <div className='w-1/2 flex items-center justify-center'>
-        <span className='bg-white p-8'> <Link className='bg-gray-900 text-white p-4 rounded-md shadow'>Dashboard visualization showing expense analytics and transaction data</Link> </span>
-    </div>
-</div>
   )
 }
 
