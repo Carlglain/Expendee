@@ -6,6 +6,8 @@ import PaymentsIcon from '@mui/icons-material/Payments';
 import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 import PieChartIcon from '@mui/icons-material/PieChart';
 import FeaturesSection from './FeaturesSection';
+import ReviewsSection from './UserReviews';
+
 function Home() {
   return (
     <div className='bg-gray-50 h-full py-6 '>
@@ -21,6 +23,8 @@ function Home() {
       </div>
       <FeaturesSection />
      <Section />
+     <ReviewsSection />
+
     </div>
   )
 }
