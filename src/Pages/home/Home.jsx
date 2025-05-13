@@ -7,10 +7,11 @@ import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 import PieChartIcon from '@mui/icons-material/PieChart';
 import FeaturesSection from './FeaturesSection';
 import ReviewsSection from './UserReviews';
+import Footer from './Footer';
 
 function Home() {
   return (
-    <div className='bg-gray-50 h-full py-6 '>
+    <div className='bg-gray-50 h-full pt-6 '>
       <HeroSection />
       <div className='bg-white h-40 my-10 '>
         <p className='text-center pt-4 tex-xl '>Trusted by users across these platforms</p>
@@ -24,7 +25,7 @@ function Home() {
       <FeaturesSection />
      <Section />
      <ReviewsSection />
-
+    <Footer />
     </div>
   )
 }
