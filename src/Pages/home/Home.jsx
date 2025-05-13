@@ -25,7 +25,7 @@ function Home() {
   )
 }
 const Section = ()=>{
-  return(<div className='w-full bg-white h-auto pl-4 lg:p-18 my-30 text-xl text-center' >
+  return(<div className='w-full bg-white h-auto p-2 lg:p-18 my-30 text-xl text-center' >
      
         <h1 className='text-[3rem] my-4'>Your Complete Financial Dashboard</h1>
         <p>Get a holistic view of your finances with our intuitive and powerful dashboard.</p>

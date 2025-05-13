@@ -5,7 +5,7 @@ import SyncLockIcon from '@mui/icons-material/SyncLock';
 import { Link } from 'react-router-dom';
 function HeroSection() {
   return (
-    <div className='flex flex-col lg:flex-row text-xl space-x-4 space-y-10 px-6 '>
+    <div className='flex flex-col lg:flex-row text-xl space-x-4 space-y-10 lg:px-6 '>
         <div className=' lg:w-1/2 w-screen '>
         
             <h1 className='font-bold text-[2rem] lg:text-[4rem] mb-6 text-center lg:text-left '>Smart Expense Tracking Across All Your Mobile Money Platforms</h1>

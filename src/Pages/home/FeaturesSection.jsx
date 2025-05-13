@@ -15,7 +15,7 @@ const Feature =({feature})=>{
 function FeaturesSection() {
   return (
     <div>
-      <div className='text-center text-xl my-12 px-6'>
+      <div className='text-center text-xl my-12 lg:px-6'>
        <h1 className='text-[2rem] font-bold '> Powerful Features for Complete Financial Control</h1>
        <p >Our platform combines intelligent analytics with intuitive design 
           to give you <br /> unprecedented insight into your spending habits.</p>
