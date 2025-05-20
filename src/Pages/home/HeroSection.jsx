@@ -24,9 +24,9 @@ function HeroSection() {
             <p><SyncLockIcon /> Bank-level security with 256-bit encryption </p>
         </div>
         <div className="lg:w-1/2 lg:flex lg:items-center block">
-            <div className="bg-white p-8 rounded-md shadow-md"> 
+            <div className="bg-white p-8 rounded-md shadow-md lg:ml-50"> 
                 <Link
-                className="bg-gray-900 text-white p-4 rounded-md hover:bg-gray-700 transition duration-300 block"  
+                className="bg-gray-900 text-white p-4 rounded-md hover:bg-gray-700 transition duration-300 block "  
                 >
                 Dashboard visualization showing expense analytics and transaction data
                 </Link>
