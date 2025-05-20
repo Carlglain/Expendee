@@ -19,7 +19,7 @@ function Login() {
     <div>
    
     <div className='flex h-screen justify-center lg:items-center space-x-4 text-black bg-black-600'>
-        <div className='hidden lg:block bg-black px-20 py-1 w-1/2 h-full text-lg text-white'>
+        <div className='hidden lg:block bg-black px-20 py-1 w-1/2 h-screen text-lg text-white'>
         <h1 className='font-bold text-[2.5rem] my-6'>Track Your Expenses Smarter</h1>
         <>Connect multiple mobile money platforms, analyze spending patterns, and get personalized insights to make better financial decisions.
         <br />
